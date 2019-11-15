@@ -1,0 +1,109 @@
+.preview-wrapper {
+  max-width: 900px;
+  height: 300px;
+  margin: 0 auto;
+  background: #eee
+    url('data:image/svg+xml,\
+   <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" fill-opacity=".1" >\
+            <rect x="200" width="200" height="200" />\
+            <rect y="200" width="200" height="200" />\
+            </svg>');
+  background-size: 30px 30px;
+}
+/* .preview-display {
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+} */
+svg {
+  cursor: default;
+}
+#svg-live-preview {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+}
+#parent-svg {
+  margin: 0 0;
+}
+#parent-svg-alt {
+  position: absolute;
+  right: 100vw;
+}
+#controls {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.1em;
+  grid-auto-rows: minmax(50px, auto);
+  background: white;
+  border: 1px solid black;
+  border-radius: 1em;
+  margin: 5px;
+  padding: 10px;
+}
+.control {
+  display: grid;
+  background: #eee;
+  grid-auto-columns: minmax(20px, auto);
+}
+.control > div,
+.control > select {
+  border: 1px solid black;
+}
+.control:nth-child(odd) {
+  background: #ddd;
+}
+/* svg {
+  border: 1px solid black;
+} */
+/* -----Colors----- */
+.color-control {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.colors input {
+  display: none;
+}
+.color-button {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+.color-button span {
+  background: #eee;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: ease 0.5s;
+}
+.color-button span:hover {
+  padding: 1px;
+}
+.black .color-button span {
+  background: #231f20;
+}
+.white .color-button span {
+  background: #fff;
+}
+.red .color-button span {
+  background: #c40042;
+}
+.orange .color-button span {
+  background: #ff6a03;
+}
+.blue .color-button span {
+  background: #015287;
+}
+.green .color-button span {
+  background: #009366;
+}
