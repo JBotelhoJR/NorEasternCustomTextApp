@@ -11,7 +11,7 @@
 
 <body>
     <div class="svg-preview-section">
-        <div class="preview-wrapper">
+        <div class="preview-wrapper svg-bg-light">
             <div class="preview-header">
                 <span class="size-info">
                     Size:
@@ -115,12 +115,12 @@
                 <div class="control preview-font-input-section">
                     <div class="field-name">Fonts: </div>
                     <select id="font-choice" class="drop-down-menu" autocomplete="off">
-                        <option value="1">Acme</option>
-                        <option value="2">Archivo Black</option>
-                        <option value="3">Bebas Neue</option>
-                        <option value="4">Bungee</option>
-                        <option value="5">Courgette</option>
-                        <option value="6">Faustina</option>
+                        <option value="1" style="font-family: acme;">ACME</option>
+                        <option value="2" style="font-family:archivoblack">ARCHIVO BLACK</option>
+                        <option value="3" style="font-family: bebasneue;">BEBAS NEUE</option>
+                        <option value="4" style="font-family: Bungee;">Bungee</option>
+                        <option value="5" style="font-family: courgette;">COURGETTE</option>
+                        <option value="6" style="font-family: Faustina;">Faustina</option>
                         <option value="7">Gravitas One</option>
                         <option value="8">Lora</option>
                         <option value="9">Luckiest Guy</option>
@@ -140,20 +140,9 @@
                     <div class="field-desc">
                         <span class="preview-dimension"><b>W:</b> 8.0" × <b>H:</b> 1.61"</span>
                     </div>
-                    <div class="drown-down-button">
-                        <select id="decal-size-chooser" autocomplete="off">
-                            <option value="8-inch">8 Inch</option>
-                            <option value="12-inch">12 Inch</option>
-                            <option value="15-inch">15 Inch</option>
-                            <option value="21-inch">21 Inch</option>
-                            <option value="25-inch">25 Inch</option>
-                            <option value="30-inch">30 Inch</option>
-                            <option value="35-inch">35 Inch</option>
-                            <option value="40-inch">40 Inch</option>
-                        </select>
-                    </div>
                 </div>
                 <div class=" control preview-color-input-section">
+                    <div class="field-name">Color:</div>
                     <div id="color-swatches" class="colors color-control">
                         <label class="black">
                             <input type="radio" name="color" value="orange">

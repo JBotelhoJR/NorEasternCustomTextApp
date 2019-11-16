@@ -1,7 +1,9 @@
 .preview-wrapper {
   max-width: 900px;
-  height: 300px;
+  height: 400px;
   margin: 0 auto;
+}
+.svg-bg-light {
   background: #eee
     url('data:image/svg+xml,\
    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" fill-opacity=".1" >\
@@ -9,13 +11,18 @@
             <rect y="200" width="200" height="200" />\
             </svg>');
   background-size: 30px 30px;
+  transition: ease 0.3s;
 }
-/* .preview-display {
-  width: auto;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-} */
+.svg-bg-dark {
+  background: #666
+    url('data:image/svg+xml,\
+   <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" fill-opacity=".1" >\
+            <rect x="200" width="200" height="200" />\
+            <rect y="200" width="200" height="200" />\
+            </svg>');
+  background-size: 30px 30px;
+  transition: ease 0.3s;
+}
 svg {
   cursor: default;
 }
@@ -106,4 +113,17 @@ svg {
 }
 .green .color-button span {
   background: #009366;
+}
+.drop-down-menu {
+}
+#font-choice optgroup option {
+  margin: 0;
+  padding: 0;
+  line-height: 1px;
+  font-size: 30px;
+}
+select optgroup {
+  margin: 0;
+  padding: 0;
+  line-height: 1px;
 }
